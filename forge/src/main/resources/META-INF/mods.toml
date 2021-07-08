@@ -11,7 +11,7 @@ authors = "Gjum"
 description = '''
 Chunk Timestamps
 '''
-#logoFile = ""
+logoFile = "assets/chunktimestamps/icon.png"
 
 [[dependencies.chunktimestamps]]
 modId = "forge"
