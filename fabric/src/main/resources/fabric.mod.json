@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "chunktimestamps",
+	"version": "${version}",
+	"name": "Chunk Timestamps",
+	"description": "Chunk Timestamps",
+	"authors": [
+		"Gjum"
+	],
+	"license": "Copyright",
+	"icon": "assets/chunktimestamps/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"gjum.minecraft.civ.chunktimestamps.fabric.FabricChunkTimestampsBootstrap"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.7.4",
+		"fabric": "*",
+		"minecraft": "1.16.x"
+	},
+	"mixins": [
+		"mixin.chunktimestamps.json"
+	]
+}
