@@ -1,4 +1,4 @@
-package gjum.minecraft.civ.chunktimestamps;
+package gjum.minecraft.civ.chunktimestamps.common;
 
 import net.minecraft.client.*;
 import org.apache.logging.log4j.LogManager;

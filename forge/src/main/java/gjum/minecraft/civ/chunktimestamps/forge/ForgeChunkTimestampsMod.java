@@ -1,6 +1,6 @@
 package gjum.minecraft.civ.chunktimestamps.forge;
 
-import gjum.minecraft.civ.chunktimestamps.AbstractChunkTimestampsMod;
+import gjum.minecraft.civ.chunktimestamps.common.AbstractChunkTimestampsMod;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 
 public class ForgeChunkTimestampsMod extends AbstractChunkTimestampsMod {
