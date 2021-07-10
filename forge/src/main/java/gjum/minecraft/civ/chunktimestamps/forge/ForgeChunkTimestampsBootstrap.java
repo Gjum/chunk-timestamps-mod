@@ -1,6 +1,8 @@
 package gjum.minecraft.civ.chunktimestamps.forge;
 
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.world.ChunkEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -21,5 +23,14 @@ public class ForgeChunkTimestampsBootstrap {
 
 	public void clientSetup(FMLClientSetupEvent event) {
 		this.mod.enable();
+	}
+
+	@SubscribeEvent
+	public void onChunkLoad(ChunkEvent.Load chunk) {
+		try {
+			mod.onChunkLoad(chunk.getChunk().getPos());
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 }
